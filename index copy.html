@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Carga de css  -->
+
+    <script src="https://kit.fontawesome.com/5b119998de.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='checkboxToggle.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css' >
+    <link rel='stylesheet' href='https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css' >
+    <link rel='stylesheet' href='https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css'>
+
+
+
+    <!-- Carga de script -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="informes2.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="content__imagen">
+        <div class="content__imagenContenedor">
+            <canvas id="canvas1" width="150" height="150"></canvas>
+            <canvas id="canvas2" width="150" height="150"></canvas>
+            <canvas id="canvas3" width="150" height="150"></canvas>
+            <canvas id="canvas4" width="150" height="150"></canvas>
+        </div>        
+    </div>
+    <br />
+    <table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <!-- <th>id</th> -->
+                <th>cuit</th>
+                <th>razon social</th>
+                <th>fecha comprobante</th>
+                <th>responsable</th>
+                <!-- <th>tipo movimiento</th> -->
+                <th>descripcion</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <!-- <th>id</th> -->
+                <th>cuit</th>
+                <th>razon social</th>
+                <th>fecha comprobante</th>
+                <th>responsable</th>
+                <!-- <th>tipo movimiento</th> -->
+                <th>descripcion</th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="modal fade bd-example-modal-lg" id="datostablas">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Datos:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">                
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <div>
+        <input class="apple-switch" type="checkbox">
+    </div>
+    
+</body>
+</html>
